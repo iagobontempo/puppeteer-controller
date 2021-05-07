@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "lib": [
+      "es2019"
+    ],
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": false,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "resolveJsonModule": true,
+    "alwaysStrict": true,
+    "removeComments": true,
+    "noImplicitReturns": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false, // To avoid typeorm warning on entity
+    "baseUrl": "src",
+    // "paths": {
+    //   "@src/*": [
+    //     "*"
+    //   ],
+    //   "@tests/*": [
+    //     "../tests/*"
+    //   ],
+    // },
+    "rootDirs": [
+      "src",
+      "tests"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "src",
+    "tests"
+  ],
+  "exclude": [
+    "./node_modules/*",
+    "dist"
+  ]
+}
